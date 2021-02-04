@@ -3,14 +3,19 @@
 
 |#|Matakuliah|Hari|Jam Masuk|Jam Keluar|Dosen|
 |--- |--- |--- |--- |--- |--- |
-|1|Statistika|Rabu|12:50|14:30|Rizal Rachman, S.Si.,MM., M.Kom|
-|2|Interaksi Manusia & Komputer|Kamis|08:40|10:20|DR. Teguh Nurhadi Suharsono,ST.,MT|
-|3|Pemrograman Desktop|Senin|07:00|08:40|Slamet Risnanto, ST.,M.Kom|
-|4|Praktek Pemrograman Desktop|Rabu|16:10|17:50|Slamet Risnanto, ST.,M.Kom|
-|5|Komunikasi Data|Selasa|12:50|14:30|Nanang Hunaifi, ST.,MM|
-|6|Pemodelan Sistem Berorentasi Objek|Selasa|15:20|17:50|Phitsa Mauliana, MM.,M.Kom|
-|7|Basis Data|Senin|12:50|15:20|Riffa Haviani Laluma, S.Kom.,MT.|
-|8|Kewirausahaan|Selasa|07:00|09:30|Ir. S.W. Pitara, MT.|
+|1|Database Management System|Senin|07:00|08:40|Gunawan, ST., M.Kom., MOS|
+|2|Praktek Database Management System|Senin|08:40|09:30|Gunawan, ST., M.Kom., MOS|
+|3|Rekayasa Perangkat Lunak|Senin|09:30|12:00|Dhany Indra Gunawan, ST.,M.Kom|
+|4|Pemrograman Web|Rabu|12:50|14:30|Teguh Wiharko, ST., MT.|
+|5|Praktek Pemrograman Web|Rabu|14:30|16:10|Teguh Wiharko, ST., MT.|
+|6|Manajemen Proyek Teknologi Informasi|Selasa|09:30|11:10|Phitsa Mauliana, MM.,M.Kom|
+|7|Pemrograman Berorientasi Objek|Selasa|07:00|08:40|Toni Arifin, ST.,M.Kom|
+|8|Praktek Pemrograman Berorientasi Objek|Selasa|08:40|09:30|Toni Arifin, ST.,M.Kom|
+|9|Internet of Things|Kamis|07:00|08:40|Bambang Sugiarto, ST.,MT|
+|10|Teori Bahasa Automata|Rabu|09:30|11:10|Gunawansyah, ST.,M.Kom|
+|11|Multimedia|Kamis|09:30|12:00|Dhema Yunautama,ST.,M.Kom|
+|12|Sistem Pendukung Keputusan|Kamis|12:50|15:20|Riffa Haviani Laluma, S.Kom.,MT.|
+
 
 
 
