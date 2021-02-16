@@ -6,9 +6,9 @@
 |1|Database Management System|Senin|07:00|08:40|Gunawan, ST., M.Kom., MOS|
 |2|Praktek Database Management System|Senin|08:40|09:30|Gunawan, ST., M.Kom., MOS|
 |3|Rekayasa Perangkat Lunak|Senin|09:30|12:00|Dhany Indra Gunawan, ST.,M.Kom|
-|4|Manajemen Proyek Teknologi Informasi|Selasa|09:30|11:10|Phitsa Mauliana, MM.,M.Kom|
-|5|Pemrograman Berorientasi Objek|Selasa|07:00|08:40|Toni Arifin, ST.,M.Kom|
-|6|Praktek Pemrograman Berorientasi Objek|Selasa|08:40|09:30|Toni Arifin, ST.,M.Kom|
+|4|Pemrograman Berorientasi Objek|Selasa|07:00|08:40|Toni Arifin, ST.,M.Kom|
+|5|Praktek Pemrograman Berorientasi Objek|Selasa|08:40|09:30|Toni Arifin, ST.,M.Kom|
+|6|Manajemen Proyek Teknologi Informasi|Selasa|09:30|11:10|Phitsa Mauliana, MM.,M.Kom|
 |7|Teori Bahasa Automata|Rabu|09:30|11:10|Gunawansyah, ST.,M.Kom|
 |8|Pemrograman Web|Rabu|12:50|14:30|Teguh Wiharko, ST., MT.|
 |9|Praktek Pemrograman Web|Rabu|14:30|16:10|Teguh Wiharko, ST., MT.|

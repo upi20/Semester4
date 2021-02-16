@@ -1,3 +1,8 @@
+// Tugas automata minggu 1
+// Kelompok
+// Isep Lutpi Nur (2113191079)
+// Farhan aziz (2113191097)
+
 #include <iostream>
 using namespace std;
 
@@ -27,11 +32,13 @@ int main()
     cout << "Masukan string yang akan dibalik: ";
     cin >> str3;
 
-    int len = str3.length();
     // Array dimulai dari 0
-    for (int i = len - 1; i >= 0; i--)
+    for (int i = str3.length() - 1; i >= 0; i--)
     {
         res1 += str3[i];
+        cout << str3[i] << endl;
     }
-    cout << res1 << endl;
+    cout << str3 << " = " << res1 << endl;
+
+    return 0;
 }
