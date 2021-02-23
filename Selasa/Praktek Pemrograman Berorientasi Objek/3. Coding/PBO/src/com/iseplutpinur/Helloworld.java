@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package taufiq;
+package com.iseplutpinur;
 
 /**
- * Nama: Muhamad Taufiq Hidayatuloh
- * NPM : 2113191036
- * Kelas : A1
+ * Nama: Isep Lutpi Nur
+ * NPM : 2113191079
+ * Kelas : A2
  */
 public class Helloworld {
     public static void main(String[] args) {

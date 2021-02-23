@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package taufiq;
+package iseplutpi;
 
 /**
- *
- * @author iseplutpi
+ * Nama: Isep Lutpi Nur
+ * NPM : 2113191079
+ * Kelas : A2
  */
 public class Main {
 
