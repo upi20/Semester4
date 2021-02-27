@@ -9,7 +9,7 @@ SELECT
 	* 
 FROM
 	user_constraints 
-WHERE 
+WHERE
 	table_name='MAHASISWA'
 
 -- 3
@@ -18,7 +18,7 @@ ALTER TABLE mahasiswa MODIFY(
 )
 
 -- 4 drop karena sudah ada
-ALTER TABLE MAHASISWA  DROP CONSTRAINT FK_MAHASISWA_KOTA
+ALTER TABLE MAHASISWA DROP CONSTRAINT FK_MAHASISWA_KOTA
 
 -- 5
 CREATE TABLE pengambilan_mk ( 
@@ -62,4 +62,17 @@ REFERENCES
 ON DELETE
 	SET NULL
 
+-- 9 Check constraint
+-- Pilihan 1
+ALTER TABLE matkul ADD CONSTRAINT sks_min CHECK (sks>0);
+ALTER TABLE matkul ADD CONSTRAINT sks_min2 CHECK (sks<5);
+
+-- Pilihan 2
+ALTER TABLE matkul ADD CONSTRAINT sks_min3 CHECK ((sks<5) AND (sks>0))
+
+
+
+-- Delete constrain
+
+ALTER TABLE [nama table] CONSTRAINT [nama constrain]
 
