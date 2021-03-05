@@ -1,7 +1,10 @@
+-- Isep Lutpi Nur
+-- 2113191079
 -- Exercise 1: Creating Tables Using Oracle Application Express
 -- 1. Create the DDL Statements for creating the tables for the Academic Database listed above – include NOT NULL constraints where necessary. (Other constraints will be added later)
 -- ======================================================
 -- Membuat table
+-- Di Run doang ======================================///
 -- ======================================================
 CREATE TABLE AD_ACADEMIC_SESSIONS (ID NUMBER, NAME VARCHAR2(50) NOT NULL);
 
@@ -98,6 +101,7 @@ CREATE TABLE AD_FACULTY_LOGIN_DETAILS (
 
 -- ======================================================
 -- Melihat detail table
+-- Screenshot ====================================|||||||
 -- ======================================================
 DESC AD_ACADEMIC_SESSIONS;
 
@@ -129,6 +133,7 @@ DESC AD_FACULTY_LOGIN_DETAILS;
 -- 1. Alter the tables in the Academic Database to define the primary key, foreign key and unique constraints.
 -- ======================================================
 -- Menambahakan constraint
+-- Di Run doang ======================================///
 -- ======================================================
 -- CONSTRAIN P
 -- 01
@@ -369,6 +374,7 @@ ADD
 -- Melihat detail CONSTRAINT TIAP TIAP TABLE
 -- ======================================================
 -- ================================================
+-- Screenshot ====================================|||||||
 -- 01 =============================================
 SELECT
     *
@@ -509,6 +515,8 @@ CREATE TABLE DEPT(
     CONSTRAINT dept_loc_pk PRIMARY KEY(dept_id, loc_id)
 );
 
+DESC DEPT;
+
 -- 2. Create the SUPPLIERS and PRODUCTS table with the following structure:
 CREATE TABLE SUPPLIERS (
     sup_id NUMBER(15),
@@ -516,6 +524,8 @@ CREATE TABLE SUPPLIERS (
     contact_name VARCHAR2(45),
     CONSTRAINT sup_id_name_pk PRIMARY KEY (sup_id, sup_name)
 );
+
+DESC SUPPLIERS;
 
 CREATE TABLE PRODUCTS (
     product_id numeric(10),
@@ -525,6 +535,8 @@ CREATE TABLE PRODUCTS (
     CONSTRAINT sup_comp_fk FOREIGN KEY (sup_id, sup_name) REFERENCES suppliers(sup_id, sup_name)
 );
 
+DESC PRODUCTS;
+
 -- 3. Create the DEPT_SAMPLE table with the following structure:
 CREATE TABLE DEPT_SAMPLE (
     dept_id NUMBER(8),
@@ -532,3 +544,5 @@ CREATE TABLE DEPT_SAMPLE (
     loc_id NUMBER(4),
     CONSTRAINT dept_det_uk UNIQUE (dept_id, dept_name)
 );
+
+DESC DEPT_SAMPLE;
