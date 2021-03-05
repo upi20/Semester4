@@ -30,8 +30,8 @@ public class LatihanPertemuan3 {
                 
         
         
-        // Program 2
-        System.out.println("\n\nProgram 2");
+        // Program 3
+        System.out.println("\n\nProgram 3");
         boolean b1 = h1 >= h2;
         System.out.println("h1: " + b1);
         boolean b2 = h2 >= h1;
