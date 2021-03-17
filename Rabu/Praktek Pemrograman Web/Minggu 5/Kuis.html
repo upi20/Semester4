@@ -1,0 +1,241 @@
+<h2 cid="n2" mdtype="heading"><span md-inline="plain">I. Fungsi Date Pada PHP</span></h2>
+<p cid="n3" mdtype="paragraph"><span md-inline="plain">Fungsi date digunakan untuk menampilkan data tanggal sesuai
+        dengan format yang diinginkan. Format penulisannya adalah sebagai berikut:</span></p>
+<pre spellcheck="false" lang="php" cid="n4"
+    mdtype="fences"><span role="presentation">date(format_tanggal, timestamp);</span></pre>
+<p cid="n5" mdtype="paragraph"><span md-inline="plain">Argumen kedua, yaitu </span><span md-inline="code"
+        spellcheck="false"><code>timestamp</code></span><span md-inline="plain">, sifatnya opsional, jika tidak
+        didefinisikan maka akan digunakan timestamp waktu sekarang (tanggal dan waktu pada komputer server ketika script
+        dieksekusi). Lebih jauh tentang timestamp di bahas dibagian bawah.</span></p>
+<p cid="n6" mdtype="paragraph"><span md-inline="code" spellcheck="false"><code>format_tanggal</code></span><span
+        md-inline="plain"> berbentuk string (teks) yang diwakili oleh karakter tertentu yang mewakili tanggal dan waktu,
+        sehingga, jika string tersebut mengandung karakter tersebut, maka akan langsung diterjemahkan menjadi waktu,
+        contoh:</span></p>
+<pre spellcheck="false" lang="php" cid="n7"
+    mdtype="fences"><span role="presentation">&lt;?php</span><br><span role="presentation">echo date('d-m-Y H:i:s'); // Hasil: 16-01-2017 11:51:06</span></pre>
+<p cid="n8" mdtype="paragraph"><span md-inline="plain">Pada contoh diatas, karena spasi dan dash (-) </span><span
+        md-inline="strong"><strong><span md-inline="plain">tidak</span></strong></span><span md-inline="plain"> termasuk
+        karakter date, maka dibiarkan apa adanya. Jika kita ingin karakter date tidak diterjemahkan, maka kita escape
+        karakter tersebut dengan backslash. Misal:</span></p>
+<pre spellcheck="false" lang="php" cid="n9"
+    mdtype="fences"><span role="presentation">&lt;?php</span><br><span role="presentation">echo date('\T\g\l: d-m-Y H:i:s'); // Tgl: 16-01-2017 13:47:56</span></pre>
+<p cid="n10" mdtype="paragraph"><span md-inline="plain">Pada contoh diatas, jika tidak diescape, maka hasil yang
+        diperoleh adalah: CET1Monday: 16-01-2017 13:49:02. Karakter date yang dapat digunakan adalah:</span></p>
+<figure cid="n11" mdtype="table">
+    <table>
+        <thead>
+            <tr cid="n12" mdtype="table_row">
+                <th><span cid="n13" mdtype="table_cell"><span md-inline="plain">Karakter</span></span></th>
+                <th><span cid="n14" mdtype="table_cell"><span md-inline="plain">Keterangan</span></span></th>
+                <th><span cid="n15" mdtype="table_cell"><span md-inline="plain">Contoh</span></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr cid="n16" mdtype="table_row">
+                <td><span cid="n17" mdtype="table_cell"><span md-inline="strong"><strong><span
+                                    md-inline="plain">Hari</span></strong></span></span></td>
+                <td><span cid="n80" mdtype="table_cell"></span></td>
+                <td><span cid="n81" mdtype="table_cell"></span></td>
+            </tr>
+            <tr cid="n18" mdtype="table_row">
+                <td><span cid="n19" mdtype="table_cell"><span md-inline="plain">d</span></span></td>
+                <td><span cid="n20" mdtype="table_cell"><span md-inline="plain">Hari dalam sebulan, berbentuk 2
+                            digit</span></span></td>
+                <td><span cid="n21" mdtype="table_cell"><span md-inline="plain">01 s.d 31</span></span></td>
+            </tr>
+            <tr cid="n22" mdtype="table_row">
+                <td><span cid="n23" mdtype="table_cell"><span md-inline="plain">j</span></span></td>
+                <td><span cid="n24" mdtype="table_cell"><span md-inline="plain">Hari dalam sebulan, tanpa awalan
+                            0</span></span></td>
+                <td><span cid="n25" mdtype="table_cell"><span md-inline="plain">1 s.d 31</span></span></td>
+            </tr>
+            <tr cid="n26" mdtype="table_row">
+                <td><span cid="n27" mdtype="table_cell"><span md-inline="plain">N</span></span></td>
+                <td><span cid="n28" mdtype="table_cell"><span md-inline="plain">Hari dalam seminggu, dimulai dari
+                            1</span></span></td>
+                <td><span cid="n29" mdtype="table_cell"><span md-inline="plain">1 (Senin) s.d 7 (Minggu)</span></span>
+                </td>
+            </tr>
+            <tr cid="n30" mdtype="table_row">
+                <td><span cid="n31" mdtype="table_cell"><span md-inline="plain">N</span></span></td>
+                <td><span cid="n32" mdtype="table_cell"><span md-inline="plain">Hari dalam seminggu, dimulai dari
+                            1</span></span></td>
+                <td><span cid="n33" mdtype="table_cell"><span md-inline="plain">0 (Minggu) s.d 6 (Sabtu)</span></span>
+                </td>
+            </tr>
+            <tr cid="n34" mdtype="table_row">
+                <td><span cid="n35" mdtype="table_cell"><span md-inline="strong"><strong><span
+                                    md-inline="plain">Bulan</span></strong></span></span></td>
+                <td><span cid="n82" mdtype="table_cell"></span></td>
+                <td><span cid="n83" mdtype="table_cell"></span></td>
+            </tr>
+            <tr cid="n36" mdtype="table_row">
+                <td><span cid="n37" mdtype="table_cell"><span md-inline="plain">m</span></span></td>
+                <td><span cid="n38" mdtype="table_cell"><span md-inline="plain">Bulan dalam angka, diawali
+                            0</span></span></td>
+                <td><span cid="n39" mdtype="table_cell"><span md-inline="plain">01 s.d 12</span></span></td>
+            </tr>
+            <tr cid="n40" mdtype="table_row">
+                <td><span cid="n41" mdtype="table_cell"><span md-inline="plain">n</span></span></td>
+                <td><span cid="n42" mdtype="table_cell"><span md-inline="plain">Bulan dalam angka, tanpa awalan
+                            0</span></span></td>
+                <td><span cid="n43" mdtype="table_cell"><span md-inline="plain">1 s.d 12</span></span></td>
+            </tr>
+            <tr cid="n44" mdtype="table_row">
+                <td><span cid="n45" mdtype="table_cell"><span md-inline="plain">M</span></span></td>
+                <td><span cid="n46" mdtype="table_cell"><span md-inline="plain">Nama bulan dalam tiga karakter (dalam
+                            bahasa Inggris)</span></span></td>
+                <td><span cid="n47" mdtype="table_cell"><span md-inline="plain">Jan s.d Dec</span></span></td>
+            </tr>
+            <tr cid="n48" mdtype="table_row">
+                <td><span cid="n49" mdtype="table_cell"><span md-inline="strong"><strong><span
+                                    md-inline="plain">Tahun</span></strong></span></span></td>
+                <td><span cid="n84" mdtype="table_cell"></span></td>
+                <td><span cid="n85" mdtype="table_cell"></span></td>
+            </tr>
+            <tr cid="n50" mdtype="table_row">
+                <td><span cid="n51" mdtype="table_cell"><span md-inline="plain">Y</span></span></td>
+                <td><span cid="n52" mdtype="table_cell"><span md-inline="plain">4 Digit Tahun</span></span></td>
+                <td><span cid="n53" mdtype="table_cell"><span md-inline="plain">Misal: 1995 atau 2018</span></span></td>
+            </tr>
+            <tr cid="n54" mdtype="table_row">
+                <td><span cid="n55" mdtype="table_cell"><span md-inline="plain">y</span></span></td>
+                <td><span cid="n56" mdtype="table_cell"><span md-inline="plain">2 Digit Tahun</span></span></td>
+                <td><span cid="n57" mdtype="table_cell"><span md-inline="plain">Misal: 95 atau 18</span></span></td>
+            </tr>
+            <tr cid="n58" mdtype="table_row">
+                <td><span cid="n59" mdtype="table_cell"><span md-inline="strong"><strong><span
+                                    md-inline="plain">Jam</span></strong></span></span></td>
+                <td><span cid="n86" mdtype="table_cell"></span></td>
+                <td><span cid="n87" mdtype="table_cell"></span></td>
+            </tr>
+            <tr cid="n60" mdtype="table_row">
+                <td><span cid="n61" mdtype="table_cell"><span md-inline="plain">H</span></span></td>
+                <td><span cid="n62" mdtype="table_cell"><span md-inline="plain">Jam dengan format 24-jam, dengan awalahn
+                            0 (dua digit jam)</span></span></td>
+                <td><span cid="n63" mdtype="table_cell"><span md-inline="plain">00 s.d 23</span></span></td>
+            </tr>
+            <tr cid="n64" mdtype="table_row">
+                <td><span cid="n65" mdtype="table_cell"><span md-inline="plain">G</span></span></td>
+                <td><span cid="n66" mdtype="table_cell"><span md-inline="plain">Jam dengan format 24-jam, tanpa awalan
+                            0</span></span></td>
+                <td><span cid="n67" mdtype="table_cell"><span md-inline="plain">0 atau 23</span></span></td>
+            </tr>
+            <tr cid="n68" mdtype="table_row">
+                <td><span cid="n69" mdtype="table_cell"><span md-inline="strong"><strong><span
+                                    md-inline="plain">Menit</span></strong></span></span></td>
+                <td><span cid="n88" mdtype="table_cell"></span></td>
+                <td><span cid="n89" mdtype="table_cell"></span></td>
+            </tr>
+            <tr cid="n70" mdtype="table_row">
+                <td><span cid="n71" mdtype="table_cell"><span md-inline="plain">i</span></span></td>
+                <td><span cid="n72" mdtype="table_cell"><span md-inline="plain">Menit dengan awalan 0 (dua digit
+                            menit)</span></span></td>
+                <td><span cid="n73" mdtype="table_cell"><span md-inline="plain">00 s.d 59</span></span></td>
+            </tr>
+            <tr cid="n74" mdtype="table_row">
+                <td><span cid="n75" mdtype="table_cell"><span md-inline="strong"><strong><span
+                                    md-inline="plain">Detik</span></strong></span></span></td>
+                <td><span cid="n90" mdtype="table_cell"></span></td>
+                <td><span cid="n91" mdtype="table_cell"></span></td>
+            </tr>
+            <tr cid="n76" mdtype="table_row">
+                <td><span cid="n77" mdtype="table_cell"><span md-inline="plain">s</span></span></td>
+                <td><span cid="n78" mdtype="table_cell"><span md-inline="plain">Detik dengan awalan 0 (dua digit
+                            detik)</span></span></td>
+                <td><span cid="n79" mdtype="table_cell"><span md-inline="plain">00 s.d 59</span></span></td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+<p cid="n92" mdtype="paragraph"><span md-inline="plain">Tabel diatas hanya menampilkan karakter yang sering
+        digunakan.</span></p>
+<p cid="n93" mdtype="paragraph"><span md-inline="plain">Format tanggal dan waktu dibuat mengikuti standar Amerika,
+        seperti penggunaan nama hari, nama bulan, penggunaan AM dan PM, dll. Sehingga, bagi kita yang tinggal di
+        Indonesia, cukup menghafalkan tabel diatas.</span></p>
+<p><br></p>
+<h2 cid="n95" mdtype="heading"><span md-inline="plain">II. Penggunaan Timestamp</span></h2>
+<p cid="n96" mdtype="paragraph"><span md-inline="plain">Timestamp merupakan suatu istilah yang merujuk pada waktu dengan
+        format unix timestamp.</span></p>
+<p cid="n97" mdtype="paragraph"><span md-inline="plain">Format ini mendefinisikan waktu berdasarkan detik yang mengacu
+        pada waktu tertentu, yaitu 01-01-1970 00:00:00, dengan zona waktu GMT+0.</span></p>
+<p cid="n98" mdtype="paragraph"><span md-inline="plain">Dengan demikian, nilai 1 pada timestamp berarti satu detik sejak
+        01-01-1970 00:00:00 atau 01-01-1970 00:00:01, perhatikan contoh berikut:</span></p>
+<pre spellcheck="false" lang="php" cid="n99"
+    mdtype="fences"><span role="presentation">&lt;?php</span><br><span role="presentation">date_default_timezone_set('UTC');</span><br><span role="presentation">echo strtotime("1970-01-01 00:00:01"); // Hasil 1</span></pre>
+<p cid="n100" mdtype="paragraph"><span md-inline="plain">Jika dibalik, yaitu dengan mengisikan angka 1 pada argumen ke
+        dua dari fungsi date(), maka akan memperoleh hasil yang sama, yaitu 1970-01-01</span></p>
+<pre spellcheck="false" lang="php" cid="n101"
+    mdtype="fences"><span role="presentation">&lt;?php</span><br><span role="presentation">echo date('Y-m-d', 1); // Hasil: 1970-01-01</span></pre>
+<p cid="n102" mdtype="paragraph"><span md-inline="plain">Terdapat dua cara untuk membuat timestamp, yaitu menggunakan
+        fungsi </span><span md-inline="code" spellcheck="false"><code>strtotime()</code></span><span md-inline="plain">
+        dan </span><span md-inline="code" spellcheck="false"><code>mktime()</code></span><span
+        md-inline="plain">.&nbsp;</span><span md-inline="link"></span></p>
+<p cid="n102" mdtype="paragraph"><span md-inline="plain"><br></span></p>
+<p cid="n103" mdtype="paragraph"><span md-inline="plain">Fungsi date dengan timestamp ini sering digunakan ketika kita
+        ingin mengubah format tanggal dari database, yang umumnya berformat Y-m-d H:i:s, meskipun banyak cara lain yang
+        bisa dilakukan, seperti menggunakan fungsi </span><span md-inline="code"
+        spellcheck="false"><code>explode()</code></span><span md-inline="plain">.</span></p>
+<p cid="n104" mdtype="paragraph"><span md-inline="plain">Misal: kita memiliki tabel tb_penjualan, dengan data sebagai
+        berikut:</span></p>
+<pre spellcheck="false" lang="" cid="n105"
+    mdtype="fences"><span role="presentation">+------+---------------------+</span><br><span role="presentation">| nama | tgl_trx &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |</span><br><span role="presentation">+------+---------------------+</span><br><span role="presentation">| Alfa | 2017-01-16 09:10:15 |</span><br><span role="presentation">| Beta | 2017-01-18 14:18:01 |</span><br><span role="presentation">+------+---------------------+</span></pre>
+<p cid="n106" mdtype="paragraph"><span md-inline="plain">Selanjutnya kita ingin menampilkan data tersebut dengan
+        PHP:</span></p>
+<pre spellcheck="false" lang="php" cid="n107"
+    mdtype="fences"><span role="presentation">&lt;?php</span><br><span role="presentation">$conn = mysqli_connect('localhost','root','','test');</span><br><span role="presentation">$query = mysqli_query ($conn, 'SELECT * FROM tb_penjualan');</span><br><span role="presentation">while($row = mysqli_fetch_array($query)) {</span><br><span role="presentation"><span role="presentation" cm-text="	">    </span>echo 'Nama: ' . $row['nama'] . ' Tanggal : ' . date('d/m/Y', strtotime($row['tgl_trx'])) . '&lt;br/&gt;';</span><br><span role="presentation">}</span></pre>
+<p cid="n108" mdtype="paragraph"><span md-inline="plain">Hasil:</span></p>
+<pre spellcheck="false" lang="" cid="n109"
+    mdtype="fences"><span role="presentation">Nama: Alfa Tanggal : 16/01/2017</span><br><span role="presentation">Nama: Beta Tanggal : 18/01/2017</span></pre>
+<h2 cid="n110" mdtype="heading"><span md-inline="plain">III. Format Nama Hari dan Bulan Dengan Bahasa Indonesia</span>
+</h2>
+<p cid="n111" mdtype="paragraph"><span md-inline="plain">Seperti telah disampaikan diawal, dalam penamaan hari dan
+        bulan, PHP menggunakan bahasa Internasional yaitu Bahasa Inggris Amerika, seperti Sunday s.d Saturday untuk nama
+        hari, dan January s.d. December untuk nama bulan. Misal:</span></p>
+<pre spellcheck="false" lang="php" cid="n112"
+    mdtype="fences"><span role="presentation">&lt;?php</span><br><span role="presentation">echo date('l, d F Y'); // Hasil: Wednesday, 19 January 2017</span></pre>
+<p cid="n113" mdtype="paragraph"><span md-inline="plain">Biasanya format tanggal yang kita gunakan adalah:</span></p>
+<pre spellcheck="false" lang="" cid="n114" mdtype="fences"><span role="presentation">Kamis, 19 Januari 2017</span></pre>
+<p cid="n115" mdtype="paragraph"><span md-inline="plain">Jika kita ingin menggunakan penamaan Bahasa Indonesia, kita
+        tidak bisa menggunakan karakter date bawaan PHP, yang artinya kita tidak bisa menggunakan fungsi </span><span
+        md-inline="code" spellcheck="false"><code>date()</code></span><span md-inline="plain">, untuk itu, kita harus
+        menggunakan cara lain, yaitu mendefinisikan sendiri nama hari atau bulan.</span></p>
+<p cid="n116" mdtype="paragraph"><span md-inline="plain">Pembahasan tentang hal ini dibahas lebih dalam pada artikel:
+    </span><span md-inline="link"><a spellcheck="false"
+            href="https://jagowebdev.com/format-tanggal-indonesia-dengan-php/"><span md-inline="plain">Format Tanggal
+                Indonesia Dengan PHP</span></a></span></p>
+<h2 cid="n117" mdtype="heading"><span md-inline="plain">IV. Timezone</span></h2>
+<p cid="n118" mdtype="paragraph"><span md-inline="plain">Penting diperhatikan bahwa secara default, zona waktu timestamp
+        adalah GMT + 0 atau zona waktu sesuai dengan yang didefinisikan pada file konfigurasi </span><span
+        md-inline="code" spellcheck="false"><code>php.ini</code></span><span md-inline="plain">.</span></p>
+<p cid="n119" mdtype="paragraph"><span md-inline="plain">Sedangkan kita, di Indonesia menggunakan zona waktu GMT + 7,
+        perbedaan zona waktu ini pada jam tertentu akan mengakibatkan perbedaan tanggal. Misal, ketika fungsi date di
+        jalankan pada pukul 00:01 dinihari s.d pukul 06.00 pagi, maka hasil yang diperoleh masih tanggal kemarin, untuk
+        lebih jelas, bisa ditampilkan data waktunya: </span><span md-inline="code"
+        spellcheck="false"><code>date(d-m-Y H:i:s)</code></span></p>
+<p cid="n120" mdtype="paragraph"><span md-inline="plain">Untuk mengatasi hal tersebut, kita perlu mengatur zona waktu
+        menjadi Asia/Jakarta. Terdapat beberapa cara untuk melakukannya, diantaranya mendefinisikan zona waktu dengan
+        fungsi </span><span md-inline="code" spellcheck="false"><code>date_default_timezone_set()</code></span><span
+        md-inline="plain"> dan melalui setting pada file </span><span md-inline="code"
+        spellcheck="false"><code>php.ini</code></span></p>
+<p cid="n121" mdtype="paragraph"><span md-inline="plain">Contoh pendefinisian melalui fungsi </span><span
+        md-inline="code" spellcheck="false"><code>date_default_timezone_set()</code></span><span md-inline="plain">
+        adalah sebagai berikut:</span></p>
+<pre spellcheck="false" lang="php" cid="n122"
+    mdtype="fences"><span role="presentation">date_default_timezone_set('Asia/Jakarta')</span></pre>
+<p cid="n123" mdtype="paragraph"><span md-inline="plain">Contoh:</span></p>
+<pre spellcheck="false" lang="php" cid="n124"
+    mdtype="fences"><span role="presentation">&lt;?php</span><br><span role="presentation">echo 'Default Timezone: ' . date('d-m-Y H:i:s');</span><br><span role="presentation"><span cm-text="">​</span></span><br><span role="presentation">date_default_timezone_set('Asia/Jakarta');</span><br><span role="presentation">echo 'Indonesian Timezone: ' . date('d-m-Y H:i:s');</span></pre>
+<p cid="n125" mdtype="paragraph"><span md-inline="plain">Hasil:</span></p>
+<pre spellcheck="false" lang="" cid="n126"
+    mdtype="fences"><span role="presentation">Default Timezone: 18-01-2017 23:21:03</span><br><span role="presentation">Indonesian Timezone: 19-01-2017 05:21:03</span></pre>
+<p cid="n127" mdtype="paragraph"><span md-inline="plain">Pada contoh diatas terlihat bahwa fungsi </span><span
+        md-inline="code" spellcheck="false"><code>date_default_timezone_set()</code></span><span md-inline="plain">
+        hanya akan mengubah zona waktu fungsi date yang ada setelah fungsi tersebut.</span></p>
+<p cid="n128" mdtype="paragraph"><span md-inline="plain">Untuk mengubah zona waktu secara permanen untuk keseluruhan
+        script, bisa dilakukan dengan mengubah setting pada file php.ini. Buka file php.ini yang ada di dalam folder
+        php, kemudian cari kata-kata timezone, selanjutnya ganti timezone sesuai yang diinginkan, misal
+        ‘Asial/Jakarta’:</span></p>
+<pre spellcheck="false" lang="php" cid="n129"
+    mdtype="fences"><span role="presentation">date.timezone = Asia/Jakarta</span></pre>
+<p><br></p>

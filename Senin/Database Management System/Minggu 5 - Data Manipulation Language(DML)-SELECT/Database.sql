@@ -1,0 +1,633 @@
+-- 6-4 : Defining Data Manipulation Practice Solutions
+-- Exercise 1: Inserting Rows in Tables
+-- iNSERT DATA KE TABLE AD_ACADEMIC_SESSIONS
+-- ======================================================
+-- INSERTING ROWS IN THE AD_ACADEMIC_SESSIONS TABLE
+INSERT INTO
+    AD_ACADEMIC_SESSIONS
+VALUES
+    (100, 'SPRING SESSION');
+
+INSERT INTO
+    AD_ACADEMIC_SESSIONS
+VALUES
+    (200, 'FALL SESSION');
+
+INSERT INTO
+    AD_ACADEMIC_SESSIONS
+VALUES
+    (300, 'SUMMER SESSION');
+
+-- INSERT DATA KE TABLE AD_DEPARTMENTS
+-- ======================================================
+-- INSERTING ROWS IN THE AD_DEPARTMENTS TABLE
+INSERT INTO
+    AD_DEPARTMENTS
+VALUES
+    (10, 'ACCOUNTING', 'MARK SMITH');
+
+INSERT INTO
+    AD_DEPARTMENTS
+VALUES
+    (20, 'BIOLOGY', 'DAVE GOLD');
+
+INSERT INTO
+    AD_DEPARTMENTS
+VALUES
+    (30, 'COMPUTER SCIENCE', 'LINDA BROWN');
+
+INSERT INTO
+    AD_DEPARTMENTS
+VALUES
+    (40, 'LITERATURE', 'ANITA TAYLOR');
+
+-- INSERT DATA KE TABLE AD_PARENT_INFORMATION
+-- ======================================================
+-- INSERTING ROWS IN THE AD_PARENT_INFORMATION TABLE
+ALTER TABLE
+    AD_PARENT_INFORMATION READ WRITE;
+
+INSERT INTO
+    AD_PARENT_INFORMATION
+VALUES
+    (600, 'NEIL', 'SMITH', 'DORIS', 'SMITH');
+
+INSERT INTO
+    AD_PARENT_INFORMATION
+VALUES
+    (610, 'WILLIAM', 'BEN', 'NITA', 'BEN');
+
+INSERT INTO
+    AD_PARENT_INFORMATION
+VALUES
+    (620, 'SEAN', 'TAYLOR', 'RHEA', 'TAYLOR');
+
+INSERT INTO
+    AD_PARENT_INFORMATION
+VALUES
+    (630, 'DAVE', 'CARMEN', 'CATHY', 'CARMEN');
+
+INSERT INTO
+    AD_PARENT_INFORMATION
+VALUES
+    (640, 'JOHN', 'AUDRY', 'JANE', 'AUDRY');
+
+-- INSERT DATA KE TABLE AD_STUDENTS
+-- ======================================================
+-- INSERTING ROWS IN THE AD_STUDENTS TABLE
+INSERT INTO
+    AD_STUDENTS
+VALUES
+    (
+        720,
+        'JACK',
+        'SMITH',
+        TO_DATE('01-Jan-2012', 'DD-Mon-YYYY'),
+        'JSMITH@SCHOOL.EDU',
+        600
+    );
+
+INSERT INTO
+    AD_STUDENTS
+VALUES
+    (
+        730,
+        'NOAH',
+        'AUDRY',
+        TO_DATE('01-Jan-2012', 'DD-Mon-YYYY'),
+        'NAUDRY@SCHOOL.EDU',
+        640
+    );
+
+INSERT INTO
+    AD_STUDENTS
+VALUES
+    (
+        740,
+        'RHONDA',
+        'TAYLOR',
+        TO_DATE('01-Sep-2012', 'DD-Mon-YYYY'),
+        'RTAYLOR@SCHOOL.EDU',
+        620
+    );
+
+INSERT INTO
+    AD_STUDENTS
+VALUES
+    (
+        750,
+        'ROBERT',
+        'BEN',
+        TO_DATE('01-Mar-2012', 'DD-Mon-YYYY'),
+        'RBEN@SCHOOL.EDU',
+        610
+    );
+
+INSERT INTO
+    AD_STUDENTS
+VALUES
+    (
+        760,
+        'JEANNE',
+        'BEN',
+        TO_DATE('01-Mar-2012', 'DD-Mon-YYYY'),
+        'JBEN@SCHOOL.EDU',
+        610
+    );
+
+INSERT INTO
+    AD_STUDENTS
+VALUES
+    (
+        770,
+        'MILLS',
+        'CARMEN',
+        TO_DATE('01-Apr-2013', 'DD-Mon-YYYY'),
+        'MCARMEN@SCHOOL.EDU',
+        630
+    );
+
+-- INSERT DATA KE TABLE AD_COURSES
+-- ======================================================
+-- INSERTING ROWS IN THE AD_COURSES TABLE
+INSERT INTO
+    AD_COURSES
+VALUES
+    (
+        190,
+        'PRINCIPLES OF ACCOUNTING',
+        100,
+        10,
+        NULL,
+        NULL,
+        'BUILDING A',
+        '101',
+        'MWF 12-1'
+    );
+
+INSERT INTO
+    AD_COURSES
+VALUES
+    (
+        191,
+        'INTRODUCTION TO BUSINESS LAW',
+        100,
+        10,
+        NULL,
+        NULL,
+        'BUILDING B',
+        '201',
+        'THUR 2-4'
+    );
+
+INSERT INTO
+    AD_COURSES
+VALUES
+    (
+        192,
+        'COST ACCOUNTING',
+        100,
+        10,
+        NULL,
+        NULL,
+        'BUILDING C',
+        '301',
+        'TUES 5-7'
+    );
+
+INSERT INTO
+    AD_COURSES
+VALUES
+    (
+        193,
+        'STRATEGIC TAX PLANNING FOR BUSINESS',
+        100,
+        10,
+        'TAX123',
+        'PASSWORD',
+        NULL,
+        NULL,
+        NULL
+    );
+
+INSERT INTO
+    AD_COURSES
+VALUES
+    (
+        194,
+        'GENERAL BIOLOGY',
+        200,
+        20,
+        'BIO123',
+        'PASSWORD',
+        NULL,
+        NULL,
+        NULL
+    );
+
+INSERT INTO
+    AD_COURSES
+VALUES
+    (
+        195,
+        'CELL BIOLOGY',
+        200,
+        20,
+        NULL,
+        NULL,
+        'BUILDING D',
+        '401',
+        'MWF 9-10'
+    );
+
+-- INSERT DATA KE TABLE AD_FACULTY
+-- ======================================================
+-- INSERTING ROWS IN THE AD_FACULTY TABLE
+INSERT INTO
+    AD_FACULTY
+VALUES
+    (
+        800,
+        'JILL',
+        'MILLER',
+        'JMILL@SCHOOL.EDU',
+        10000,
+        'HEALTH',
+        NULL,
+        20
+    );
+
+INSERT INTO
+    AD_FACULTY
+VALUES
+    (
+        810,
+        'JAMES',
+        'BORG',
+        'JBORG@SCHOOL.EDU',
+        30000,
+        'HEALTH,DENTAL',
+        NULL,
+        10
+    );
+
+INSERT INTO
+    AD_FACULTY
+VALUES
+    (
+        820,
+        'LYNN',
+        'BROWN',
+        'LBROWN@SCHOOL.EDU',
+        NULL,
+        NULL,
+        50,
+        30
+    );
+
+INSERT INTO
+    AD_FACULTY
+VALUES
+    (
+        830,
+        'ARTHUR',
+        'SMITH',
+        'ASMITH@SCHOOL.EDU',
+        NULL,
+        NULL,
+        40,
+        10
+    );
+
+INSERT INTO
+    AD_FACULTY
+VALUES
+    (
+        840,
+        'SALLY',
+        'JONES',
+        'SJONES@SCHOOL.EDU',
+        50000,
+        'HEALTH,DENTAL,VISION',
+        NULL,
+        40
+    );
+
+-- INSERT DATA KE TABLE AD_EXAM_TYPES
+-- ======================================================
+-- INSERTING ROWS IN THE AD_EXAM_TYPES TABLE
+INSERT INTO
+    AD_EXAM_TYPES
+VALUES
+    (
+        'MCE',
+        'Multiple Choice Exams',
+        'CHOOSE MORE THAN ONE ANSWER'
+    );
+
+INSERT INTO
+    AD_EXAM_TYPES
+VALUES
+    (
+        'TF',
+        'TRUE AND FALSE Exams',
+        'CHOOSE EITHER TRUE OR FALSE'
+    );
+
+INSERT INTO
+    AD_EXAM_TYPES
+VALUES
+    (
+        'FIB',
+        'FILL IN THE BLANKS Exams',
+        'TYPE IN THE CORRECT ANSWER'
+    );
+
+INSERT INTO
+    AD_EXAM_TYPES
+VALUES
+    ('ESS', 'ESSAY Exams', 'WRITE PARAGRAPHS');
+
+INSERT INTO
+    AD_EXAM_TYPES
+VALUES
+    (
+        'SA',
+        'SHORT ANSWER Exams',
+        'WRITE SHORT ANSWERS'
+    );
+
+-- INSERT DATA KE TABLE AD_EXAMS
+-- ======================================================
+-- INSERTING ROWS IN THE AD_EXAMS TABLE
+INSERT INTO
+    AD_EXAMS
+VALUES
+    (
+        500,
+        TO_DATE('12-Sep-2013', 'DD-Mon-YYYY'),
+        'MCE',
+        190
+    );
+
+INSERT INTO
+    AD_EXAMS
+VALUES
+    (
+        510,
+        TO_DATE('15-Sep-2013', 'DD-Mon-YYYY'),
+        'SA',
+        191
+    );
+
+INSERT INTO
+    AD_EXAMS
+VALUES
+    (
+        520,
+        TO_DATE('18-Sep-2013', 'DD-Mon -YYYY'),
+        'FIB',
+        192
+    );
+
+INSERT INTO
+    AD_EXAMS
+VALUES
+    (
+        530,
+        TO_DATE('21-Mar-2014', 'DD-Mon -YYYY'),
+        'ESS',
+        193
+    );
+
+INSERT INTO
+    AD_EXAMS
+VALUES
+    (
+        540,
+        TO_DATE('02-Apr-2014', 'DD-Mon-YYYY'),
+        'TF',
+        194
+    );
+
+-- INSERT DATA KE TABLE AD_EXAM_RESULTS
+-- ======================================================
+-- INSERTING ROWS IN THE AD_EXAM_RESULTS TABLE
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (720, 190, 500, 91);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (720, 193, 520, 97);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (730, 195, 540, 87);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (730, 194, 530, 85);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (750, 192, 500, 60);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (750, 195, 510, 97);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (750, 191, 520, 78);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (760, 192, 540, 65);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (760, 191, 530, 60);
+
+INSERT INTO
+    AD_EXAM_RESULTS
+VALUES
+    (760, 192, 510, 70);
+
+-- INSERT DATA KE TABLE AD_STUDENT_ATTENDANCE
+-- ======================================================
+-- INSERTING ROWS IN THE AD_STUDENT_ATTENDANCE TABLE
+INSERT INTO
+    AD_STUDENT_ATTENDANCE
+VALUES
+    (720, 100, 180, 21, 'Y');
+
+INSERT INTO
+    AD_STUDENT_ATTENDANCE
+VALUES
+    (730, 200, 180, 11, 'Y');
+
+INSERT INTO
+    AD_STUDENT_ATTENDANCE
+VALUES
+    (740, 300, 180, 12, 'Y');
+
+INSERT INTO
+    AD_STUDENT_ATTENDANCE
+VALUES
+    (750, 100, 180, 14, 'Y');
+
+INSERT INTO
+    AD_STUDENT_ATTENDANCE
+VALUES
+    (760, 200, 180, 15, 'Y');
+
+INSERT INTO
+    AD_STUDENT_ATTENDANCE
+VALUES
+    (770, 300, 180, 13, 'Y');
+
+-- INSERT DATA KE TABLE AD_STUDENT_COURSE_DETAILS
+-- ======================================================
+-- INSERTING ROWS IN THE AD_STUDENT_COURSE_DETAILS TABLE
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (720, 190, 'A');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (720, 193, 'B');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (730, 191, 'C');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (740, 195, 'F');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (750, 192, 'A');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (760, 190, 'B');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (760, 192, 'C');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (770, 192, 'D');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (770, 193, 'F');
+
+INSERT INTO
+    AD_STUDENT_COURSE_DETAILS
+VALUES
+    (770, 194, 'A');
+
+-- INSERT DATA KE TABLE AD_FACULTY_COURSE_DETAILS
+-- ======================================================
+-- INSERTING ROWS IN THE AD_FACULTY_COURSE_DETAILS TABLE
+INSERT INTO
+    AD_FACULTY_COURSE_DETAILS
+VALUES
+    (800, 192, 3);
+
+INSERT INTO
+    AD_FACULTY_COURSE_DETAILS
+VALUES
+    (800, 193, 4);
+
+INSERT INTO
+    AD_FACULTY_COURSE_DETAILS
+VALUES
+    (800, 190, 5);
+
+INSERT INTO
+    AD_FACULTY_COURSE_DETAILS
+VALUES
+    (800, 191, 3);
+
+INSERT INTO
+    AD_FACULTY_COURSE_DETAILS
+VALUES
+    (810, 194, 4);
+
+INSERT INTO
+    AD_FACULTY_COURSE_DETAILS
+VALUES
+    (810, 195, 5);
+
+-- INSERT DATA KE TABLE AD_FACULTY_LOGIN_DETAILS
+-- ======================================================
+-- INSERTING ROWS IN THE AD_FACULTY_LOGIN_DETAILS TABLE
+INSERT INTO
+    AD_FACULTY_LOGIN_DETAILS
+VALUES
+    (800, DEFAULT);
+
+INSERT INTO
+    AD_FACULTY_LOGIN_DETAILS
+VALUES
+    (810, DEFAULT);
+
+INSERT INTO
+    AD_FACULTY_LOGIN_DETAILS
+VALUES
+    (840, DEFAULT);
+
+INSERT INTO
+    AD_FACULTY_LOGIN_DETAILS
+VALUES
+    (820, DEFAULT);
+
+INSERT INTO
+    AD_FACULTY_LOGIN_DETAILS
+VALUES
+    (830, DEFAULT);
+
+-- Exerice 2 Updateing rows in teh tables
+-- Task 1
+ALTER TABLE
+    AD_FACULTY_LOGIN_DETAILS
+ADD
+    DETAILS VARCHAR2(50);
+
+-- Task 2
+UPDATE
+    AD_FACULTY_LOGIN_DETAILS
+SET
+    DETAILS = 'TEST LOGIN'
+where
+    FACULTY_ID = 810;
+
+UPDATE
+    AD_FACULTY_LOGIN_DETAILS
+SET
+    DETAILS = 'CLASS LOGIN'
+where
+    FACULTY_ID = 840;
