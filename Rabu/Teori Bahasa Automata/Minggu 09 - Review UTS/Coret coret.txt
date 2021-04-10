@@ -1,0 +1,8 @@
+2.	Jika di ketahui string  x = "hitam" dan  y = "kotak", tentukanlah 
+a)	x|y = hitam atau kotak
+b)	xy  = hitamkotak
+c)	|y|k = 2
+d)  head(y) = k
+e)  substring(y) = 
+f)  prefix(y) 
+
