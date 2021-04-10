@@ -1,0 +1,39 @@
+01. Berikut adalah beberapa grup golongan dari internet, kecuali..........
+Pilih salah satu:
+b. jaringan node //
+
+02. Berikut adalah layer-layer pada TCP/IP, kecuali...........
+Pilih salah satu:
+c. presentation //
+
+03. Contoh aplikasi pada Layer Application adalah...........
+Pilih salah satu:
+b. Telnet //
+
+04. Contoh jaringan lokal pada jaringan internet adalah jaringan dalam sebuah.........
+Pilih salah satu:
+d. kampus //
+
+05. Contoh pada Layer Network Interface adalah...........
+Pilih salah satu:
+d. X.25 //
+
+06. Dengan dibentuk dalam layer-layer pada TCP/IP maka akan mempermudah untuk...........
+Pilih salah satu:
+c. pengembangan //
+
+07. Suatu perangkat yang dapat meneruskan suatu paket data dari jaringan yang satu ke jaringan yang lain disebut...........
+Pilih salah satu:
+c. router //
+
+08. TCP merupakan singkatan dari...........
+Pilih salah satu:
+c. Transmission Control Protocol //
+
+09. Tujuan dari TCP/IP adalah untuk membangun suatu koneksi antar..........
+Pilih salah satu:
+b. jaringan //
+
+10. Untuk dapat mengidentifikasikan komputer (host) diperlukan sebuah alamat yang disebut.........Address
+Pilih salah satu:
+b. IP //
