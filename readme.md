@@ -37,7 +37,7 @@ datas.forEach((data) => {
 
 
 // add new row
-const tbodyRef = document.getElementsByTagName('table')[1].getElementsByTagName('tbody')[0];
+let tbodyRef = document.getElementsByTagName('table')[1].getElementsByTagName('tbody')[0];
 
 // Insert a row at the end of table
 let newRow = tbodyRef.insertRow();
